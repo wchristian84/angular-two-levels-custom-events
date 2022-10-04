@@ -1,0 +1,5 @@
+<div *ngFor="let book of books" (click)="emitClick(book.title)">
+  <p>Title: {{ book.title }}</p>
+  <p>By {{ book.author }}</p>
+  <hr />
+</div>

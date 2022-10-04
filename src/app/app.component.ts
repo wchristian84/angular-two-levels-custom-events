@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-two-levels-custom-events';
+  title: string = '';
+
+    receiveBook(book: string) {
+      this.title = book;
+      console.log('title: ', this.title);
+    }
 }
